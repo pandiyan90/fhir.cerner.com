@@ -206,24 +206,22 @@ Notes:
 
 <%= headers status: 201 %>
 <pre class="terminal">
-    Date → Tue, 27 Feb 2018 16:47:59 GMT
-    Cache-Control → no-cache
-    Vary → Origin,User-Agent,Accept-Encoding
-    Strict-Transport-Security → max-age=631152000
-    Server-Response-Time → 9272.410216999999
-    X-Xss-Protection → 1; mode=block
-    Pragma → no-cache
-    X-Request-Id → 78a19072002b8651623351cfedaffe70
-    Etag → W/"0"
-    X-Frame-Options → SAMEORIGIN
-    X-Runtime → 9.272318
-    X-Content-Type-Options → nosniff
-    Expires → Mon, 01 Jan 1990 00:00:00 GMT
-    Last-Modified → Tue, 27 Feb 2018 16:48:00 GMT
-    Location → https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Patient/4842008
-    Status → 201 Created
-    Content-Length → 0
-    Content-Type → application/json
+Date: Tue, 27 Feb 2018 16:47:59 GMT
+Cache-Control: no-cache
+Vary: Origin,User-Agent,Accept-Encoding
+Strict-Transport-Security: max-age=631152000
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Request-Id: 78a19072002b8651623351cfedaffe70
+Etag: W/"0"
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Tue, 27 Feb 2018 16:48:00 GMT
+Location: https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Patient/4842008
+Status: 201 Created
+Content-Length: 0
+Content-Type: application/json
 </pre>
 
 The `ETag` response header indicates the current `If-Match` version to use on subsequent updates.
