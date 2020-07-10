@@ -136,7 +136,6 @@ Date: Wed, 14 Aug 2019 17:23:14 GMT
 Etag: W/"6767735"
 Location: https://fhir-ehr.sandboxcerner.com/r4/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Organization/6767735,
 Last-Modified: Wed, 14 Aug 2019 17:23:14 GMT
-Status: 201 Created
 Vary: Origin
 X-Request-Id: 11111111111111111111111111111111
 </pre>

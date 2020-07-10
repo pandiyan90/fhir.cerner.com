@@ -153,7 +153,6 @@ Date: Sun, 30 Jun 2019 10:35:00 GMT
 Etag: W/"1"
 Last-Modified: Sun, 30 Jun 2019 10:35:00 GMT
 Location: https://fhir-ehr.sandboxcerner.com/r4/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Immunization/147391087
-Status: 201 Created
 Vary: Origin
 X-Request-Id: 1638e30e497b93ff4383b2ff0eaeea68
 </pre>
@@ -203,7 +202,6 @@ Content-Type: application/fhir+json
 Date: Sun, 30 Jun 2019 10:40:00 GMT
 Etag: W/"2"
 Last-Modified: Sun, 30 Jun 2019 10:40:00 GMT
-Status: 200 OK
 Vary: Origin
 X-Request-Id: 1638e30e497b93ff4383b2ff0eaeea91
 </pre>

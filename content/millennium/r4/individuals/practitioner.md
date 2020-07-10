@@ -133,7 +133,6 @@ Date: Mon, 09 Dec 2019 18:57:39 GMT
 Etag: W/"0"
 Last-Modified: Mon, 09 Dec 2019 18:57:39 GMT
 Location: https://fhir-ehr.sandboxcerner.com/r4/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Practitioner/7118008
-Status: 201 Created
 Vary: Origin
 X-Request-Id: 9d3aecfa-c846-4ce2-825a-7ba2fce4813f
 </pre>

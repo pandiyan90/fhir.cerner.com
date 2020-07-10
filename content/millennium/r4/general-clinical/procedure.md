@@ -147,7 +147,6 @@ Date: Mon, 06 Apr 2020 19:00:43 GMT
 Etag: W/"1"
 Location: https://fhir-ehr.sandboxcerner.com/r4/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Procedure/17228728
 Last-Modified: Mon, 06 Apr 2020 19:00:43 GMT
-Status: 201 Created
 Vary: Origin
 X-Request-Id: 2e11665d-618d-4017-9a90-c3c1afeeac00
 </pre>

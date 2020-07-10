@@ -199,7 +199,6 @@ Date: Wed, 27 Mar 2019 17:23:14 GMT
 Etag: W/"0"
 Location: https://fhir-ehr.sandboxcerner.com/r4/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Patient/5786010
 Last-Modified: Wed, 27 Mar 2019 17:23:14 GMT
-Status: 201 Created
 Vary: Origin
 X-Request-Id: 11111111111111111111111111111111
 </pre>
@@ -255,7 +254,6 @@ Content-Type: application/fhir+json
 Date: Wed, 27 Mar 2019 17:23:14 GMT
 Etag: W/"1"
 Last-Modified: Wed, 27 Mar 2019 17:23:14 GMT
-Status: 200 OK
 Vary: Origin
 X-Request-Id: 81c05ba01b2c19e5bf421449ff8e97eb
 </pre>

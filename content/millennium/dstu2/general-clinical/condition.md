@@ -174,7 +174,6 @@ X-Content-Type-Options: nosniff
 Expires: Mon, 01 Jan 1990 00:00:00 GMT
 Last-Modified: Tue, 28 Feb 2017 21:26:44 GMT
 Location: https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Condition/p6809861
-Status: 201 Created
 Content-Length: 0
 Content-Type: application/json
 </pre>
@@ -209,7 +208,6 @@ X-Content-Type-Options: nosniff
 Expires: Mon, 01 Jan 1990 00:00:00 GMT
 Last-Modified: Tue, 28 Feb 2017 21:30:28 GMT
 Location: https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Condition/d36474555
-Status: 201 Created
 Content-Length: 0
 Content-Type: application/json
 </pre>
@@ -276,7 +274,6 @@ X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
 Expires: Mon, 01 Jan 1990 00:00:00 GMT
 Last-Modified: Wed, 01 Mar 2017 15:42:52 GMT
-Status: 200 OK
 Content-Length: 0
 Content-Type: application/json
 </pre>
