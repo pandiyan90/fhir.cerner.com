@@ -14,6 +14,20 @@ module Cerner
       },
       "extension": [
         {
+          "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/custom-attribute",
+          "extension": [
+              {
+                "url": "custom-attribute-name",
+                "id": "ENCNTR:3339152",
+                "valueString": "Self-Pay Follow Up Date"
+              },
+              {
+                "url": "custom-attribute-value",
+                "valueDateTime": "2020-07-03T12:00:00.000Z"
+              }
+            ]
+        },
+        {
           "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/client-organization",
           "valueReference": {
             "reference": "Organization/675844"
