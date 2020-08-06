@@ -58,12 +58,15 @@ The following fields are returned if valued:
 
 All URLs for custom extensions are defined as `https://fhir-ehr.cerner.com/r4/StructureDefinition/{id}`
 
- ID                                                        | Value\[x] Type      | Description
------------------------------------------------------------|---------------------|----------------------------------------------------------------
- `client-organization`                                     | [`Reference`]       | The financially responsible organization.
- `estimated-financial-responsibility-amount`               | [`Money`]           | The estimated amount to be collected for the encounter.
- `estimated-financial-responsibility-not-collected-reason` | [`CodeableConcept`] | The reason no estimated amount is collected for the encounter.
- `payment-collection-status`                               | [`CodeableConcept`] | The status of the payment collection for the encounter.
+ ID                                                        | Value\[x] Type                    | Description
+-----------------------------------------------------------|-----------------------------------|----------------------------------------------------------------
+ `client-organization`                                     | [`Reference`]                     | The financially responsible organization.
+ `custom-attribute`                                        | None (contains nested extensions) | A client defined custom attribute for the resource.
+ `custom-attribute-name`                                   | [`String`]                        | The name or description of the client defined custom attribute.
+ `custom-attribute-value`                                  | [`CodeableConcept`]               | The value of the client defined custom attribute.
+ `estimated-financial-responsibility-amount`               | [`Money`]                         | The estimated amount to be collected for the encounter.
+ `estimated-financial-responsibility-not-collected-reason` | [`CodeableConcept`]               | The reason no estimated amount is collected for the encounter.
+ `payment-collection-status`                               | [`CodeableConcept`]               | The status of the payment collection for the encounter.
 
 ## Search
 
