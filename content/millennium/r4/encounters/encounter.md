@@ -37,7 +37,7 @@ The following fields are returned if valued:
    * [Name](https://hl7.org/fhir/r4/encounter-definitions.html#Encounter.location.location){:target="_blank"}
    * [Location status](https://hl7.org/fhir/r4/encounter-definitions.html#Encounter.location.status){:target="_blank"}
 * [Service provider (Organization)](https://hl7.org/fhir/r4/encounter-definitions.html#Encounter.serviceProvider){:target="_blank"}
-* [Extensions including client organization, estimated financial responsibility amount, payment collection status, and estimated financial responsibility not collected reason](#extensions){:target="_blank"}
+* [Extensions including client organization, custom attribute, estimated financial responsibility amount, payment collection status, and estimated financial responsibility not collected reason](#extensions){:target="_blank"}
 
 ### Contained Location Bindings
 
@@ -50,6 +50,7 @@ The following fields are returned if valued:
 ## Extensions
 
 * [Client Organization]
+* [Custom Attribute]
 * [Estimated Financial Responsibility Amount]
 * [Payment Collection Status]
 * [Estimated Financial Responsibility Not Collected Reason]
@@ -58,15 +59,15 @@ The following fields are returned if valued:
 
 All URLs for custom extensions are defined as `https://fhir-ehr.cerner.com/r4/StructureDefinition/{id}`
 
- ID                                                        | Value\[x] Type                    | Description
------------------------------------------------------------|-----------------------------------|----------------------------------------------------------------
- `client-organization`                                     | [`Reference`]                     | The financially responsible organization.
- `custom-attribute`                                        | None (contains nested extensions) | A client defined custom attribute for the resource.
- `custom-attribute-name`                                   | [`String`]                        | The name or description of the client defined custom attribute.
- `custom-attribute-value`                                  | [`CodeableConcept`]               | The value of the client defined custom attribute.
- `estimated-financial-responsibility-amount`               | [`Money`]                         | The estimated amount to be collected for the encounter.
- `estimated-financial-responsibility-not-collected-reason` | [`CodeableConcept`]               | The reason no estimated amount is collected for the encounter.
- `payment-collection-status`                               | [`CodeableConcept`]               | The status of the payment collection for the encounter.
+ ID                                                        | Value\[x] Type                                             | Description
+-----------------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------
+ `client-organization`                                     | [`Reference`]                                              | The financially responsible organization.
+ `custom-attribute`                                        | None (contains nested extensions)                          | A client defined custom attribute for the resource.
+ `custom-attribute-name`                                   | [`string`]                                                 | The name or description of the client defined custom attribute.
+ `custom-attribute-value`                                  | [`CodeableConcept`], [`dateTime`], [`integer`], [`string`] | The value of the client defined custom attribute.
+ `estimated-financial-responsibility-amount`               | [`Money`]                                                  | The estimated amount to be collected for the encounter.
+ `estimated-financial-responsibility-not-collected-reason` | [`CodeableConcept`]                                        | The reason no estimated amount is collected for the encounter.
+ `payment-collection-status`                               | [`CodeableConcept`]                                        | The status of the payment collection for the encounter.
 
 ## Search
 
@@ -258,11 +259,15 @@ The common [errors] and [OperationOutcomes] may be returned.
 
 [`_count`]: https://hl7.org/fhir/r4/search.html#count
 [`CodeableConcept`]: http://hl7.org/fhir/r4/datatypes.html#CodeableConcept
+[`dateTime`]: http://hl7.org/fhir/r4/datatypes.html#dateTime
+[`integer`]: http://hl7.org/fhir/r4/datatypes.html#integer
 [`Money`]: http://hl7.org/fhir/r4/datatypes.html#Money
 [`number`]: https://hl7.org/fhir/r4/search.html#number
 [`reference`]: http://hl7.org/fhir/r4/references.html#Reference
+[`string`]: http://hl7.org/fhir/r4/references.html#string
 [`token`]: https://hl7.org/fhir/r4/search.html#token
 [Client Organization]: #custom-extensions
+[Custom Attribute]: #custom-extensions
 [contained]: https://hl7.org/fhir/r4/references.html#contained
 [Encounter.hospitalization.destination]: https://hl7.org/fhir/r4/encounter-definitions.html#Encounter.hospitalization.destination
 [Encounter.location.location]: https://hl7.org/fhir/r4/encounter-definitions.html#Encounter.location.location
