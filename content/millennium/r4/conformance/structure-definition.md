@@ -62,7 +62,7 @@ Authorization is not required.
 
     GET https://fhir-ehr.cerner.com/r4/StructureDefinition/account-balance
 
-#### Responsea
+#### Response
 
 <%= headers status: 200 %>
 <%= json(:r4_structure_definition_bundle) %>
