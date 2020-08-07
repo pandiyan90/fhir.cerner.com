@@ -59,15 +59,13 @@ The following fields are returned if valued:
 
 All URLs for custom extensions are defined as `https://fhir-ehr.cerner.com/r4/StructureDefinition/{id}`
 
- ID                                                        | Value\[x] Type                                             | Description
------------------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------
- `client-organization`                                     | [`Reference`]                                              | The financially responsible organization.
- `custom-attribute`                                        | None (contains nested extensions)                          | A client defined custom attribute for the resource.
- `custom-attribute-name`                                   | [`string`]                                                 | The name or description of the client defined custom attribute.
- `custom-attribute-value`                                  | [`CodeableConcept`], [`dateTime`], [`integer`], [`string`] | The value of the client defined custom attribute.
- `estimated-financial-responsibility-amount`               | [`Money`]                                                  | The estimated amount to be collected for the encounter.
- `estimated-financial-responsibility-not-collected-reason` | [`CodeableConcept`]                                        | The reason no estimated amount is collected for the encounter.
- `payment-collection-status`                               | [`CodeableConcept`]                                        | The status of the payment collection for the encounter.
+ ID                                                        | Value\[x] Type                    | Description
+-----------------------------------------------------------|-----------------------------------|----------------------------------------------------------------
+ `client-organization`                                     | [`Reference`]                     | The financially responsible organization.
+ `custom-attribute`                                        | None (contains nested extensions) | A client defined custom attribute for the resource.
+ `estimated-financial-responsibility-amount`               | [`Money`]                         | The estimated amount to be collected for the encounter.
+ `estimated-financial-responsibility-not-collected-reason` | [`CodeableConcept`]               | The reason no estimated amount is collected for the encounter.
+ `payment-collection-status`                               | [`CodeableConcept`]               | The status of the payment collection for the encounter.
 
 ## Search
 
@@ -259,12 +257,9 @@ The common [errors] and [OperationOutcomes] may be returned.
 
 [`_count`]: https://hl7.org/fhir/r4/search.html#count
 [`CodeableConcept`]: http://hl7.org/fhir/r4/datatypes.html#CodeableConcept
-[`dateTime`]: http://hl7.org/fhir/r4/datatypes.html#dateTime
-[`integer`]: http://hl7.org/fhir/r4/datatypes.html#integer
 [`Money`]: http://hl7.org/fhir/r4/datatypes.html#Money
 [`number`]: https://hl7.org/fhir/r4/search.html#number
 [`reference`]: http://hl7.org/fhir/r4/references.html#Reference
-[`string`]: http://hl7.org/fhir/r4/references.html#string
 [`token`]: https://hl7.org/fhir/r4/search.html#token
 [Client Organization]: #custom-extensions
 [Custom Attribute]: #custom-extensions
